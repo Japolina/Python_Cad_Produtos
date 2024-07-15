@@ -7,7 +7,7 @@ driver = webdriver.Chrome()
 driver.get('https://www.kabum.com.br/computadores/pc/pc-gamer')
 
 # Extrair todos os titulos em inspecionar do site
-titulos = driver.find_elements(By.XPATH, "//span[@class='sc-d79c9c3f-0 nlmfp sc-9d1f1537-16 fQnige nameCard']") # //nome-da-tag[@nome-da-classe='nome']
+titulos = driver.find_elements(By.XPATH, "//span[@class='sc-d79c9c3f-0 nlmfp sc-9d1f1537-16 fQnige nameCard']") # "//nome-da-tag[@nome-da-classe='nome']"
 
 # Extrair todos os preços em inspecionar do site
 precos = driver.find_elements(By.XPATH, "//span[@class='sc-b1f5eb03-2 iaiQNF priceCard']")
